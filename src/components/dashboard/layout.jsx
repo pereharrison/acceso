@@ -4,6 +4,7 @@ import {
   LayoutDashboard,
   MessageCircle,
   BellDot,
+  ShoppingCart
 } from "lucide-react";
 import { Link, Outlet } from "react-router-dom";
 import Image from "../../assets/image.jpg";
@@ -35,6 +36,12 @@ const links = [
     icon: <BookAIcon />,
     isColor: false,
   },
+  {
+    name: 'Products',
+    link: '/products',
+    icon: <ShoppingCart />,
+    isColor: false
+  }
 ];
 
 const DashboardLayout = () => {
